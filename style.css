@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Top{
+    width: 100%;
+    min-height: 55vh;
+    background-image: url(backgrounfImg.png);
+    background-size: cover;
+    background-position: 40% 60%;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.363);
+    
+}
+
+.topLogo{
+    width: 100%;
+    top: 20%;
+    padding: 0 10vw;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    color: white;
+
+}
+ .topLogo .bal img{
+    width: 35px;
+}
+
+.topIcon i{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.topIcon i:hover{
+    color: #FF3800;
+}
+
+.bal{
+    display: flex;
+    align-items: center;
+}
+.bal p{
+    font-size: 20px;
+    padding-left:15px;
+}
+
+.textLeft{
+    display: flex;
+    bottom: 20%;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vw;
+    color: white;
+    justify-content: space-between;
+    align-items:center;
+}
+.textLeft h1{
+    font-weight: 5400;
+    font-size: 6vw;
+    
+    
+}
+.textLeft .color {
+    color: #FF3800 !important;
+    display: inline;
+}
+.textRight{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textRight p{
+    font-size: 13px;
+    line-height: 18px;
+    width: 60%;
+}
+._top{
+    margin-bottom: 10px;
+}
+
+.icon{
+    height: 100%;
+    font-size: 22px;
+    align-items: center;
+    
+}
+.icon i{
+    margin-left: 7px;
+    color: white;
+}
+.icon i:hover{
+    color: #FF3800;
+    
+}
+
+
+
+
+
+
+
+
+.Bottom{
+    display: flex;
+    width: 100%;
+    min-height: 45vh;
+}
+
+.bOne{
+    width: 20%;
+    min-height: inherit;
+    background-color: #fff;
+    padding: 4vw 5vw;
+}
+.bOne h3{
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: 300;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.bOne p{
+    color: rgba(0, 0, 0, 0.884);
+    width: 60%;
+    line-height: 22px;
+}
+
+
+.bTwo{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(photo-2.png);
+    background-size:cover ;
+    background-position: center;
+}
+
+
+.bThree{
+    width: 20%;
+    min-height: inherit;
+    background-color: burlywood;
+    
+}
+
+
+.bThreeTop{
+    padding: 3vw ;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #FF3800;
+    color: white;
+    
+}
+.bThreeTop h3{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.bThreeTop p{
+    line-height: 20px;
+    font-size: 15px;
+}
+
+
+.bThreeBottom{
+    width: 100%;
+    min-height: 25vh;
+    background-image: url(photo.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.bFour{
+    width: 30%;
+    min-height: inherit;
+    background-color: #1F1F1F;
+    padding: 50px;
+    color: white;
+}
+.notF{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notF .photo1{
+    width: 40px;
+    height: 40px;
+    background-image: url(003.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.notF .photo2{
+    width: 40px;
+    height: 40px;
+    background-image: url(010.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.notF p{
+    width: 80%;
+    font-size: 15px;
+}
+.bFour h3{
+    margin-bottom: 20px;
+    color: #fff5f5a9;
+    font-weight: 500;
+}
+
+
+
+@media(max-width:500px){
+    .main{
+        width: 100%;
+    }
+    .overlay .textLeft{
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 10%;
+    }
+
+    .overlay .textLeft .textRight{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .overlay .textLeft .textRight .icon{
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+    .topLogo{
+        /* margin-top: -13%; */
+        top: 10%;
+    }
+    .textLeft h1{
+        font-size: 9vw;
+    }
+    .textRight p{
+        width: initial;
+        margin-bottom: 0%;
+    }
+    .textRight .TRleft{
+        margin-top: 30px;
+    }
+
+    .textRight .TRright{
+        margin-top: 20px;
+    }
+
+
+    .Bottom{
+        flex-direction: column;
+       
+    }
+
+    .Bottom .bOne{
+        width: 100%;
+        min-height: 20vh;
+    }
+    .Bottom .bTwo{
+        width: 100%;
+    }
+    .Bottom .bThree{
+        width: 100%;
+        flex-direction: column;
+    }
+    .Bottom .bThree .bThreeTop{
+        min-height: 20vh;
+    }
+    .Bottom .bThree .bThreeBottom{
+        min-height: 40vh;
+    }
+    .Bottom .bFour{
+        width: 100%;
+    }
+
+}
